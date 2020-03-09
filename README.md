@@ -1,6 +1,6 @@
 # DesafioAmeDigitalRuby
 
-- Passo a passo para configurar o projeto em seu computador -
+- Passo a passo para configurar o projeto em seu computador
 </br>
 1- Git clone </br>
 2- bundle install</br>
