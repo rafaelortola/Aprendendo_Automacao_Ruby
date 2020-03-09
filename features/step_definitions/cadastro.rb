@@ -96,30 +96,7 @@ require 'faker'
     sleep 5
   end
   
-  Então("sou cadastrado com sucesso") do
-    pending # Write code here that turns the phrase above into concrete actions
-  end
-  
-  Dado("que eu informe um email válido") do
-    pending # Write code here that turns the phrase above into concrete actions
-  end
-  
-  Dado("informe uma senha válida") do
-    pending # Write code here that turns the phrase above into concrete actions
-  end
-  
-  Quando("faço o login") do
-    pending # Write code here that turns the phrase above into concrete actions
-  end
-  
-  Dado("que eu informe um email inválido") do
-    pending # Write code here that turns the phrase above into concrete actions
-  end
-  
-  Então("não sou autenticado") do
-    pending # Write code here that turns the phrase above into concrete actions
-  end
-  
-  Dado("que eu informe um email em branco") do
-    pending # Write code here that turns the phrase above into concrete actions
+  Então("sou cadastrado com sucesso {string}") do |usuario_autenticado|
+    usuario_autenticado = find('#header > div.nav > div > div > nav > div:nth-child(1) > a')
+    expect(usuario_autenticado.text).to eql usuario_autenticado
   end
